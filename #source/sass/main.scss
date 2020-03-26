@@ -477,7 +477,47 @@ body {
         }
     }
 }
-.container {
+
+.statistics {
+    padding: 70px 0 77px 0;
+    overflow: hidden;
+    .container {
+        max-width: 880px;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin: -50px;
+        flex-wrap: wrap;
+        @media(max-width: 424px) {
+            margin: -30px;
+        }
+    }
+
+    &__item {
+        margin: 50px;
+        @media(max-width: 424px) {
+            margin: 30px;
+        }
+    }
+
+    &__number {
+        height: 94px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("../images/statistics/01.png") 50% 50% no-repeat;
+        font-size: 48px;
+        font-weight: 700;
+        color: #68b0c9;
+        margin: 0 0 20px 0;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+    }
 }
-.submit-button {
+.container {
 }

@@ -933,3 +933,64 @@ body.lock {
     width: 100%;
   }
 }
+
+.statistics {
+  padding: 70px 0 77px 0;
+  overflow: hidden;
+}
+
+.statistics .container {
+  max-width: 880px;
+}
+
+.statistics__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 424px) {
+  .statistics__list {
+    margin: -30px;
+  }
+}
+
+.statistics__item {
+  margin: 50px;
+}
+
+@media (max-width: 424px) {
+  .statistics__item {
+    margin: 30px;
+  }
+}
+
+.statistics__number {
+  height: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../images/statistics/01.png") 50% 50% no-repeat;
+  font-size: 48px;
+  font-weight: 700;
+  color: #68b0c9;
+  margin: 0 0 20px 0;
+}
+
+.statistics__text {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
