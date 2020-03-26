@@ -168,6 +168,7 @@ body {
         border-radius: 20px;
         border: 1px solid #e8e8e8;
         font-size: 13px;
+        font-weight: 500;
         @media(max-width: 767px) {
             width: 100%;
         }
@@ -692,4 +693,117 @@ body {
         }
     }
 
+}
+
+.delivery {
+    padding: 59px 0 70px 0;
+    background: url("../images/delivery/bg.webp") 50% 50%/cover no-repeat;
+    .container {
+        max-width: 770px;
+        display: flex;
+        justify-content: flex-end;
+        @media(max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    &__price {
+        margin: 19px 197px 0 0;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 50%;
+        @media(max-width: 767px) {
+            margin: 0 auto 30px auto;
+        }
+    }
+
+    &__sale {
+        color: #68b0c9;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    &__old {
+        color: #1e1e1e;
+        font-weight: 300;
+        text-decoration: line-through;
+    }
+
+    &__new {
+        font-size: 24px;
+        color: #d04545;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__title {
+        color: #535353;
+        font-size: 20px;
+        line-height: 23px;
+        margin: 0 0 9px 0;
+        width: 230px;
+        @media(max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__subtitle {
+        color: #68b0c9;
+        font-size: 20px;
+        margin: 0 0 27px 0;
+        padding: 4px;
+        background-color: #fff;
+        position: relative;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 65px;
+            height: 105px;
+            background: url("../images/delivery/arrow.png") no-repeat;
+            top: 8px;
+            right: -99px;
+            @media(max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+
+    &__tel {
+        width: 260px;
+        text-align: center;
+        margin: 0 0 20px 0;
+        height: 45px;
+        border-radius: 22.5px;
+        border: 1px solid #e8e8e8;
+        font-weight: 500;
+        font-size: 13px;
+        @media(max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__submit {
+        font-size: 14px;
+        width: 260px;
+        height: 45px;
+        @media(max-width: 767px) {
+            width: 100%;
+        }
+    }
+}
+.container {
+}
+.submit-button {
 }
