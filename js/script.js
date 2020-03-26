@@ -2,7 +2,7 @@
 
 // ajax
 $(document).ready(function () {
-	$(".home__form").submit(function () {
+	$(".home__form,.delivery__form").submit(function () {
 		$.ajax({
 			type: "POST",
 			url: 'feedback.php',

@@ -774,6 +774,10 @@ body {
             background: url("../images/delivery/arrow.png") no-repeat;
             top: 8px;
             right: -99px;
+            @media(max-width: 944px) {
+                left: -99px;
+                transform: scale(-1, 1);
+            }
             @media(max-width: 767px) {
                 display: none;
             }
@@ -803,7 +807,206 @@ body {
         }
     }
 }
-.container {
-}
-.submit-button {
+
+.compare {
+    padding: 62px 0 78px 0;
+    .container {
+        display: flex;
+        @media(max-width: 767px) {
+            flex-direction: column;               
+        }
+    }
+    &__col {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        &:first-child {
+            text-align: right;
+            margin: 0 9px 0;
+            @media(max-width: 767px) {
+                margin: 0 0 50px 0;            
+            }
+            .compare__title {
+                color: #535353;
+                margin: 0 32px 0 0;
+                align-self: flex-end;
+                @media(max-width: 767px) {
+                    margin: 0 0 20px 0;
+                }
+            }
+            .compare__body {
+                @media(max-width: 767px) {
+                    justify-content: flex-end;
+                }
+            }
+            .compare__item {
+                color: #939393;
+            }
+            .compare__image {
+                position: relative;
+                @media(max-width: 767px) {
+                    right: -15px;
+                }
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: -5px;
+                    width: 1px;
+                    height: 299px;
+                    background-color: #68b0c9;
+                    @media(max-width: 767px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &:last-child {
+            .compare__title {
+                color: #68b0c9;
+                margin: 0 0 0 32px;
+                @media(max-width: 767px) {
+                    margin: 0 0 20px 0;
+                }
+            }
+            .compare__body {
+                @media(max-width: 767px) {
+                    justify-content: flex-end;
+                }
+            }
+            .compare__item {
+                color: #68b0c9;
+            }
+            .compare__image {
+                @media(max-width: 767px) {
+                    left: -15px;
+                }
+            }
+        }
+    }
+
+    &__title {
+        font-size: 22px;
+        width: 150px;
+        @media(max-width: 767px) {
+            width: 100%;
+            font-size: 27px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        margin: 11px 0 0 0;
+        @media(max-width: 767px) {
+            align-items: center;
+        }
+    }
+
+    &__list {
+    }
+
+    &__item {
+        max-width: 210px;
+        line-height: 18px;
+        font-size: 15px;
+        position: relative;
+        margin: 0 0 28px 0;
+        &:last-child {
+            margin: 0;
+        }
+        @media(max-width: 767px) {
+            max-width: 100%;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            display: block;
+            @media(max-width: 767px) {
+                display: none;
+            }
+        }
+        &-1 {
+            &:after {
+                background: url("../images/compare/01.png") no-repeat;
+                width: 81px;
+                height: 41px;
+                top: 5px;
+                right: -103px;
+            }
+        }
+        &-2 {
+            &:after {
+                background: url("../images/compare/02.png") no-repeat;
+                width: 87px;
+                height: 29px;
+                top: 3px;
+                right: -103px;
+            }
+        }
+        &-3 {
+            &:after {
+                background: url("../images/compare/03.png") no-repeat;
+                width: 87px;
+                height: 23px;
+                top: -14px;
+                right: -107px;
+            }
+        }
+        &-4 {
+            &:after {
+                background: url("../images/compare/04.png") no-repeat;
+                width: 85px;
+                height: 34px;
+                top: -28px;
+                right: -108px;
+            }
+        }
+        &-5 {
+            &:after {
+                background: url("../images/compare/05.png") no-repeat;
+                width: 82px;
+                height: 42px;
+                top: 4px;
+                left: -105px;
+            }
+        }
+        &-6 {
+            &:after {
+                background: url("../images/compare/06.png") no-repeat;
+                width: 86px;
+                height: 30px;
+                top: 2px;
+                left: -104px;
+            }
+        }
+        &-7 {
+            &:after {
+                background: url("../images/compare/07.png") no-repeat;
+                width: 88px;
+                height: 22px;
+                top: -14px;
+                left: -105px;
+            }
+        }
+        &-8 {
+            &:after {
+                background: url("../images/compare/08.png") no-repeat;
+                width: 84px;
+                height: 34px;
+                top: -31px;
+                left: -105px;
+            }
+        }
+    }
+
+    &__item {
+    }
+
+    &__image {
+        @media(max-width: 767px) {
+            position: relative;
+        }
+    }
 }
