@@ -1,34 +1,8 @@
 "use strict";
 
-// burger
-$(window).on("load resize", function(){
-	if ($(window).width() < 768){
-		if (document.querySelector(".menu-burg__button.active"))
-			$('.menu-burg__box,.menu-burg__button').addClass('active');
-			$('body').add('lock');
-	} else {
-		if (document.querySelector(".menu-burg__button.active"))
-			$('.menu-burg__box,.menu-burg__button').removeClass('active');
-			$('body').removeClass('lock');
-  }
-
-});
-$(document).ready(function(){
-	$('.menu-burg__button').click(function(event) {
-		$('.menu-burg__button,.menu-burg__box').toggleClass('active');
-		$('body').toggleClass('lock');
-	});
-});
-
-/*
-// inputmask
-$(document).ready(function(){
-	$(".request__input-tel,.consult__input-tel,.popup__input-tel").inputmask({"mask": "+7 (999) 999-99-99"})
-});
-
 // ajax
 $(document).ready(function () {
-	$(".request__form,.consult__form,.popup__form").submit(function () {
+	$(".home__form").submit(function () {
 		$.ajax({
 			type: "POST",
 			url: 'feedback.php',
@@ -40,10 +14,15 @@ $(document).ready(function () {
 				// when error
 			}
 		});
-	$.fancybox.close($("#popup-back-call,#popup-fast-back-call"));
-	$.fancybox.open($("#popup-thanks"));
+	$.fancybox.close($("#popup-back-call"));
 	return false;
 	});
+});
+
+/*
+// inputmask
+$(document).ready(function(){
+	$(".request__input-tel,.consult__input-tel,.popup__input-tel").inputmask({"mask": "+7 (999) 999-99-99"})
 });
 
 // ibg
