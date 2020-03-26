@@ -305,11 +305,12 @@ body.lock {
           box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
   font-size: 14px;
   font-weight: 700;
-  color: #ffffff;
+  color: #ffffff !important;
   margin: 0 auto;
   cursor: pointer;
   -webkit-transition: background-color .25s ease;
   transition: background-color .25s ease;
+  text-transform: uppercase;
 }
 
 .submit-button:hover {
@@ -920,7 +921,6 @@ body.lock {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 16px;
-  color: #ffffff !important;
 }
 
 @media (max-width: 767px) {
@@ -1268,8 +1268,8 @@ body.lock {
 
 .delivery__price {
   margin: 19px 197px 0 0;
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   position: relative;
   text-align: center;
   display: -webkit-box;
@@ -1299,6 +1299,7 @@ body.lock {
   color: #68b0c9;
   font-size: 17px;
   font-weight: 700;
+  margin: 5px 0 18px 0;
 }
 
 .delivery__old {
@@ -1307,9 +1308,20 @@ body.lock {
   text-decoration: line-through;
 }
 
+.delivery__old:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 96px;
+  margin: 7px 0 9px 0;
+  background-color: #e8e8e8;
+}
+
 .delivery__new {
   font-size: 24px;
   color: #d04545;
+  position: relative;
+  left: 4px;
 }
 
 .delivery__form {
@@ -1436,6 +1448,9 @@ body.lock {
 }
 
 .compare__col:first-child {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   text-align: right;
   margin: 0 9px 0;
 }
@@ -1496,6 +1511,12 @@ body.lock {
   .compare__col:first-child .compare__image:after {
     display: none;
   }
+}
+
+.compare__col:last-child {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .compare__col:last-child .compare__title {
@@ -1654,5 +1675,131 @@ body.lock {
 @media (max-width: 767px) {
   .compare__image {
     position: relative;
+  }
+}
+
+.address {
+  padding: 50px 0;
+  background-color: #ecf3f8;
+}
+
+.address .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .address .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.address__google-map {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  height: 320px;
+}
+
+@media (max-width: 767px) {
+  .address__google-map {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    min-height: 460px;
+    position: relative;
+    width: calc(100% + 30px);
+  }
+}
+
+@media (max-width: 569px) {
+  .address__google-map {
+    min-height: 370px;
+  }
+}
+
+@media (max-width: 424px) {
+  .address__google-map {
+    min-height: 280px;
+  }
+}
+
+.address__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  max-width: 272px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .address__body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    max-width: 100%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin: 0 0 50px 0;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+  }
+}
+
+.address__image {
+  margin: 0 0 19px 0;
+}
+
+.address__text {
+  font-weight: 300;
+  color: #535353;
+  margin: 0 0 19px 0;
+}
+
+.address__subtitle {
+  font-size: 20px;
+  color: #68b0c9;
+  margin: 0 0 50px 0;
+}
+
+@media (max-width: 767px) {
+  .address__subtitle {
+    margin: 0 0 19px 0;
+  }
+}
+
+.address__button {
+  width: 260px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .address__button {
+    width: 100%;
   }
 }

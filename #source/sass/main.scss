@@ -30,10 +30,11 @@ body {
     box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
     font-size: 14px;
     font-weight: 700;
-    color: #ffffff;
+    color: #ffffff !important;
     margin: 0 auto;
     cursor: pointer;
     transition: background-color .25s ease;
+    text-transform: uppercase;
     &:hover {
         background-color: #5e5e5e;
     }
@@ -469,7 +470,6 @@ body {
         align-items: center;
         justify-content: center;
         font-size: 16px;
-        color: #ffffff !important;
         @media(max-width: 767px) {
             width: 100%;
         }
@@ -708,8 +708,8 @@ body {
     }
     &__price {
         margin: 19px 197px 0 0;
-        width: 150px;
-        height: 150px;
+        width: 160px;
+        height: 160px;
         position: relative;
         text-align: center;
         display: flex;
@@ -727,17 +727,28 @@ body {
         color: #68b0c9;
         font-size: 17px;
         font-weight: 700;
+        margin: 5px 0 18px 0;   
     }
 
     &__old {
         color: #1e1e1e;
         font-weight: 300;
         text-decoration: line-through;
+        &:after {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 96px;
+            margin: 7px 0 9px 0;
+            background-color: #e8e8e8;
+        }
     }
 
     &__new {
         font-size: 24px;
         color: #d04545;
+        position: relative;
+        left: 4px;
     }
 
     &__form {
@@ -821,6 +832,7 @@ body {
         display: flex;
         flex-direction: column;
         &:first-child {
+            align-items: flex-end;
             text-align: right;
             margin: 0 9px 0;
             @media(max-width: 767px) {
@@ -863,6 +875,7 @@ body {
             }
         }
         &:last-child {
+            align-items: start;
             .compare__title {
                 color: #68b0c9;
                 margin: 0 0 0 32px;
@@ -1007,6 +1020,80 @@ body {
     &__image {
         @media(max-width: 767px) {
             position: relative;
+        }
+    }
+}
+
+.address {
+    padding: 50px 0;
+    background-color: #ecf3f8;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media(max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    &__google-map {
+        flex: 0 1 50%;
+        height: 320px;
+        @media(max-width: 767px) {
+            flex: 1 1 100%;
+            order: 1;
+            min-height: 460px;
+            position: relative;
+            width: calc(100% + 30px);
+        }
+        @media(max-width: 569px) {
+            min-height: 370px;
+        }
+        @media(max-width: 424px) {
+            min-height: 280px;
+        }
+    }
+
+    &__body {
+        flex: 1 1 50%;
+        max-width: 272px;
+        margin: 0 auto;
+        text-align: center;
+        @media(max-width: 767px) {
+            flex: 1 1 100%;
+            max-width: 100%;
+            order: 0;
+            margin: 0 0 50px 0;
+            align-self: stretch;
+        }
+    }
+
+    &__image {
+        margin: 0 0 19px 0;
+    }
+
+    &__text {
+        font-weight: 300;
+        color: #535353;
+        margin: 0 0 19px 0;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        color: #68b0c9;
+        margin: 0 0 50px 0;
+        @media(max-width: 767px) {
+            margin: 0 0 19px 0;
+        }
+    }
+
+    &__button {
+        width: 260px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media(max-width: 767px) {
+            width: 100%;
         }
     }
 }
