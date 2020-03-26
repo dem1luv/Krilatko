@@ -33,6 +33,11 @@ $(document).ready(function(){
 	}
 });
 
+// fancybox
+$(document).ready(function(){
+	$(".certificate__zoom").fancybox();
+});
+
 /*
 // inputmask
 $(document).ready(function(){
