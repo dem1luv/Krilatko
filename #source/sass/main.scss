@@ -23,6 +23,21 @@ body {
     color: #535353;
     text-align: center;
 }
+.submit-button {
+    display: inline-block;
+    border-radius: 22.5px;
+    background-color: #68b0c9;
+    box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color .25s ease;
+    &:hover {
+        background-color: #5e5e5e;
+    }
+}
 .text {
 
 }
@@ -161,17 +176,6 @@ body {
     &__submit {
         width: 220px;
         height: 45px;
-        border-radius: 22.5px;
-        background-color: #68b0c9;
-        box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
-        font-size: 14px;
-        font-weight: 700;
-        color: #ffffff;
-        cursor: pointer;
-        transition: background-color .25s ease;
-        &:hover {
-            background-color: #5e5e5e;
-        }
         @media(max-width: 767px) {
             width: 100%;
         }
@@ -307,3 +311,173 @@ body {
     }
 }
 
+.sale {
+    padding: 65px 0 49px 0;
+    background: url("../images/sale/bg.webp") 50% 50% no-repeat, #ecf3f8;
+    @media(max-width: 767px) {
+        background-size: cover;
+    }
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        @media(max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    &__col {
+        &:last-child {
+            margin: 0 0 0 98px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media(max-width: 767px) {
+                margin: 0;
+            }
+        }
+    }
+
+    &__price {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 120px 0 0 0;
+        &:after {
+            content: "";
+            display: block;
+            width: 155px;
+            height: 64px;
+            background: url("../images/sale/arrow.png") 50% 50% no-repeat;
+            position: absolute;
+            left: 102px;
+            bottom: -77px;
+            @media(max-width: 767px) {
+                display: none;
+            }
+        }
+        @media(max-width: 767px) {
+            margin: 0 auto 47px auto;    
+        }
+    }
+
+    &__price-old {
+        font-size: 18px;
+        text-decoration: line-through;
+        font-weight: 300;
+        color: #1e1e1e;
+        &:after {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 120px;
+            margin: 10px 0 11px 0;
+            background-color: #e8e8e8;
+        }
+    }
+
+    &__price-new {
+        color: #d04545;
+        font-size: 30px;
+        position: relative;
+        left: 4px;
+    }
+
+    &__title {
+        color: #535353;
+        font-size: 55px;
+        text-transform: uppercase;
+        margin: 0 0 13px 0;
+        @media(max-width: 380px) {
+            font-size: 42px;
+        }
+    }
+
+    &__subtitle {
+        color: #535353;
+        font-size: 26px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 0 0 12px 0;
+        @media(max-width: 380px) {
+            font-size: 18px;
+        }
+    }
+
+    &__subtitle-gift {
+        color: #68b0c9;
+        font-size: 25px;
+        text-align: center;
+        margin: 0 0 47px 0;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            width: 22px;
+            height: 20px;
+            background: url("../images/sale/gift.png") 50% 50% no-repeat;
+            position: absolute;
+            left: -33px;
+            top: 4px;
+        }
+    }
+
+    &__block {
+        background-color: #ecf3f8;
+        width: 275px;
+        height: 200px;
+        border-radius: 23px;
+        border: 5px solid #ffffff;
+        padding: 28px;
+        @media(max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 35px 0;
+    }
+
+    &__block-text {
+        font-size: 14px;
+        color: #d35656;
+        line-height: 16px;
+    }
+
+    &__calendar {
+        flex: 0 0 48px;
+        height: 43px;
+        background: url("../images/sale/calendar.png") 50% 50% no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: #ffffff;
+        margin: 0 14px;
+    }
+
+    &__submit {
+        width: 200px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        color: #ffffff !important;
+        @media(max-width: 767px) {
+            width: 100%;
+        }
+    }
+}
+.container {
+}
+.submit-button {
+}
