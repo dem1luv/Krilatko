@@ -520,7 +520,7 @@ body {
 
 .certificate {
     padding: 80px 0 92px 0;
-    
+    background-image: linear-gradient(to bottom, #f9fbfd 0%, #ecf3f8 100%);
     .container {
         max-width: 803px;
     }
@@ -594,4 +594,102 @@ body {
             margin: 0;
         }
     }
+}
+
+.struct {
+    padding: 132px 0 72px 0;
+    @media(max-width: 767px) {
+        padding: 72px 0;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 840px;
+        @media(max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 240px;
+        position: relative;
+        @media(max-width: 767px) {
+            max-width: 100%;
+            margin: 0 0 30px;
+            &:last-child {
+                margin: 0;
+            }
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            @media(max-width: 839px) {
+                display: none;
+            }
+        }
+        &-1 {
+            text-align: right;
+            &:after {
+                width: 122px;
+                height: 109px;
+                background: url("../images/struct/01.png") no-repeat;
+                top: 5px;
+                right: -134px;
+            }
+        }
+        &-2 {
+            text-align: right;
+            &:after {
+                width: 144px;
+                height: 54px;
+                background: url("../images/struct/02.png") no-repeat;
+                top: -33px;
+                right: -127px;
+            }
+        }
+        &-3 {
+            &:after {
+                width: 150px;
+                height: 78px;
+                background: url("../images/struct/03.png") no-repeat;
+                top: -39px;
+                left: -145px;
+            }
+        }
+        &-4 {
+            &:after {
+                width: 143px;
+                height: 53px;
+                background: url("../images/struct/04.png") no-repeat;
+                top: 6px;
+                left: -150px;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        color: #68b0c9;
+        margin: 0 0 19px 0;
+    }
+
+    &__text {
+        color: #606060;
+        font-weight: 300;
+        line-height: 17px;
+    }
+
+    &__image {
+        @media(max-width: 767px) {
+            margin: 30px 0;
+        }
+    }
+
 }
