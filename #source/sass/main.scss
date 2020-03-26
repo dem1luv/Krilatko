@@ -19,7 +19,9 @@ body {
     margin: 0 auto;
 }
 .title {
-    
+    font-size: 36px;
+    color: #535353;
+    text-align: center;
 }
 .text {
 
@@ -175,3 +177,133 @@ body {
         }
     }
 }
+
+.why {
+    padding: 80px 0 100px 0;
+    background-image: linear-gradient(to top, #f9fbfd 0%, #ffffff 100%);
+    &__title {
+        margin: 0 0 131px 0;
+    }
+
+    &__list {
+        max-width: 780px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 105px 0;
+        @media(max-width: 767px) {
+            align-items: center;
+        }
+        @media(max-width: 599px) {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        &:last-child {
+            margin: 0;
+        }
+        &:nth-child(odd) {
+            text-align: left;
+            .why__image {
+                margin: 0 0 0 80px;
+                @media(max-width: 767px) {
+                    margin: 0 0 0 30px;
+                }
+                @media(max-width: 599px) {
+                    margin: 0 auto;
+                }
+            }
+            .why__name:after {
+                right: -101px;
+            }
+        }
+        &:nth-child(even) {
+            text-align: right;
+            .why__image {
+                margin: 0 80px 0 0;
+                @media(max-width: 767px) {
+                    margin: 0 30px 0 0;
+                }
+                @media(max-width: 599px) {
+                    margin: 0 auto;
+                }
+            }
+            .why__name:after {
+                left: -137px;
+                transform: scale(-1, 1);
+            }
+            @media(max-width: 599px) {
+                .why__col:first-child {
+                    order: 1;
+                }
+                .why__col:last-child {
+                    order: 0;
+                }
+            }
+        }
+    }
+
+    &__name {
+        color: #68b0c9;
+        font-size: 30px;
+        max-width: 400px;
+        margin: 36px 0 31px 0;
+        line-height: 35px;
+        position: relative;
+        @media(max-width: 767px) {
+            margin: 0 0 20px 0;
+        }
+        @media(max-width: 599px) {
+            max-width: 100%;
+            text-align: center;
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -88px;
+            width: 199px;
+            height: 53px;
+            background: url("../images/why/arrow.png") no-repeat 50% 50%;
+            @media(max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        max-width: 400px;
+        font-size: 18px;
+        line-height: 24px;
+        @media(max-width: 599px) {
+            max-width: 100%;
+            text-align: center;
+            margin: 0 0 20px 0;
+        }
+    }
+
+    &__image {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        position: relative;
+        @media(max-width: 330px) {
+            width: 290px;
+            height: 290px;
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 183px;
+            height: 26px;
+            bottom: -25px;
+            left: calc(50% - 91.5px);
+            background: url("../images/why/shadow.png") 50% 50% no-repeat;
+        }
+    }
+}
+

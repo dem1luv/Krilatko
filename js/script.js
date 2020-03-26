@@ -19,12 +19,6 @@ $(document).ready(function () {
 	});
 });
 
-/*
-// inputmask
-$(document).ready(function(){
-	$(".request__input-tel,.consult__input-tel,.popup__input-tel").inputmask({"mask": "+7 (999) 999-99-99"})
-});
-
 // ibg
 $(document).ready(function(){
 	let ibg = document.getElementsByClassName("ibg");
@@ -37,6 +31,12 @@ $(document).ready(function(){
 		item.css("background-size", "cover");
 		child.remove();
 	}
+});
+
+/*
+// inputmask
+$(document).ready(function(){
+	$(".request__input-tel,.consult__input-tel,.popup__input-tel").inputmask({"mask": "+7 (999) 999-99-99"})
 });
 
 // sliders
