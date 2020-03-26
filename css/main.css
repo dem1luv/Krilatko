@@ -1448,15 +1448,15 @@ body.lock {
 }
 
 .compare__col:first-child {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   text-align: right;
   margin: 0 9px 0;
 }
 
 @media (max-width: 767px) {
   .compare__col:first-child {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     margin: 0 0 50px 0;
   }
 }
@@ -1513,10 +1513,12 @@ body.lock {
   }
 }
 
-.compare__col:last-child {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+@media (max-width: 767px) {
+  .compare__col:last-child {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
 }
 
 .compare__col:last-child .compare__title {
@@ -1709,6 +1711,7 @@ body.lock {
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   height: 320px;
+  border-radius: 20px;
 }
 
 @media (max-width: 767px) {
@@ -1722,6 +1725,7 @@ body.lock {
     min-height: 460px;
     position: relative;
     width: calc(100% + 30px);
+    border-radius: 0;
   }
 }
 
@@ -1801,5 +1805,62 @@ body.lock {
 @media (max-width: 767px) {
   .address__button {
     width: 100%;
+  }
+}
+
+.footer {
+  padding: 20px 0;
+  font-weight: 300;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 529px) {
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 529px) {
+  .footer__logo {
+    margin: 0 0 15px;
+  }
+}
+
+.footer__politics {
+  text-decoration: underline;
+  color: #68b0c9 !important;
+}
+
+@media (max-width: 529px) {
+  .footer__politics {
+    text-align: center;
+    margin: 0 0 15px;
+  }
+}
+
+.footer__numbers {
+  color: #505050;
+  text-align: right;
+}
+
+@media (max-width: 529px) {
+  .footer__numbers {
+    text-align: center;
+    margin: 0 0 15px;
+    line-height: 17px;
   }
 }
