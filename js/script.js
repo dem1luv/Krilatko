@@ -2,7 +2,7 @@
 
 // ajax
 $(document).ready(function () {
-	$(".home__form,.delivery__form").submit(function () {
+	$(".home__form,.delivery__form,.popup__form").submit(function () {
 		$.ajax({
 			type: "POST",
 			url: 'feedback.php',
@@ -15,6 +15,7 @@ $(document).ready(function () {
 			}
 		});
 	$.fancybox.close($("#popup-back-call"));
+	$.fancybox.open($("#popup-thanks"));
 	return false;
 	});
 });
@@ -23,8 +24,8 @@ $(document).ready(function () {
 $(document).ready(function(){
 	let ibg = document.getElementsByClassName("ibg");
 	for (let i = 0; i < ibg.length; i++) {
-  		let item = $(ibg[i]);
-  		let child = item.children("img");
+	let item = $(ibg[i]);
+	let child = item.children("img");
 		let link = child.attr("src");
 		let background = item.css("background-image");
 		item.css("background", `${background} 100% 100% no-repeat, url(${link}) 50% 50% no-repeat`);
