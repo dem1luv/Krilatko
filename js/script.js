@@ -39,12 +39,12 @@ $(document).ready(function(){
 	$(".certificate__zoom").fancybox();
 });
 
-/*
 // inputmask
 $(document).ready(function(){
-	$(".request__input-tel,.consult__input-tel,.popup__input-tel").inputmask({"mask": "+7 (999) 999-99-99"})
+	$(".home__tel,.delivery__tel,.popup__tel").inputmask({"mask": "+7 (999) 999-99-99"})
 });
 
+/*
 // sliders
 $(document).ready(function(){
     $('.places__slider').slick({

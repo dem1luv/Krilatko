@@ -479,7 +479,7 @@ body.lock {
   margin: 0 0 19px 0;
 }
 
-.home__input {
+.home__tel {
   width: 220px;
   text-align: center;
   margin: 0 0 15px 0;
@@ -491,7 +491,7 @@ body.lock {
 }
 
 @media (max-width: 767px) {
-  .home__input {
+  .home__tel {
     width: 100%;
   }
 }
@@ -1975,6 +1975,11 @@ body.lock {
 }
 
 /* fancybox popups */
+.fancybox-is-open .fancybox-bg {
+  background: #0a2531;
+  opacity: .8;
+}
+
 .fancybox-close-small {
   display: none;
 }
@@ -2021,7 +2026,6 @@ body.lock {
   height: 40px;
   font-size: 13px;
   font-weight: 500;
-  color: #9c9c9c;
   text-align: center;
   margin: 0 0 15px 0;
 }

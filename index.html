@@ -20,7 +20,7 @@
                 </div>
                 <div class="header__right">
                     <h2 class="header__phone">+7 (950) 733-31-70</h2>
-                    <a href="#" class="header__back-call">Заказать обратный звонок</a>
+                    <a data-fancybox data-src="#popup-back-call" href="javascript:;" class="header__back-call">Заказать обратный звонок</a>
                 </div>
             </div>
         </header>
@@ -31,7 +31,7 @@
                 <form action="#" class="home__form">
                     <h3 class="home__form-title">Нет времени читать?</h3>
                     <p class="home__text">Оставляйте номер, мы вам перезвоним!</p>
-                    <input type="tel" class="home__input" placeholder="Ваш телефон" required>
+                    <input type="tel" name="tel" class="home__tel" pattern="\+7\s[\(][0-9]{3}[\)]{0,1}\s\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="Ваш телефон" required>
                     <input type="submit" value="ПЕРЕЗВОНИТЕ МНЕ" class="home__submit submit-button">
                 </form>
             </div>
@@ -94,7 +94,7 @@
                             <p class="sale__calendar">4</p>
                             <p class="sale__block-text">декабря!</p>
                         </div>
-                        <a href="#" class="sale__submit submit-button">ЗАКАЗАТЬ</a>
+                        <a data-fancybox data-src="#popup-back-call" href="javascript:;" class="sale__submit submit-button">ЗАКАЗАТЬ</a>
                     </div>
                 </div>
             </div>
@@ -181,7 +181,7 @@
                 <form action="#" class="delivery__form">
                     <h2 class="delivery__title">Оставьте заявку сейчас и получите</h2>
                     <h3 class="delivery__subtitle">бесплатную доставку!</h3>
-                    <input type="tel" class="delivery__tel" placeholder="Ваш телефон" required>
+                    <input type="tel" name="tel" class="delivery__tel" pattern="\+7\s[\(][0-9]{3}[\)]{0,1}\s\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="Ваш телефон" required>
                     <input type="submit" value="ПЕРЕЗВОНИТЕ МНЕ" class="delivery__submit submit-button">
                 </form>
             </div>
@@ -228,7 +228,7 @@
                     <p class="address__text">Забрать кресло можно по адресу:</p>
                     <h3 class="address__subtitle">Челябинск,<br>ул. Академика Королева, 38</h3>
                     <p class="address__text">или используйте</p>
-                    <a href="#" class="address__button submit-button">Бесплатная доставка</a>
+                    <a data-fancybox data-src="#popup-back-call" href="javascript:;" class="address__button submit-button">Бесплатная доставка</a>
                 </div>
             </div>
         </div>
@@ -251,7 +251,7 @@
         <h3 class="popup__title">Обратный звонок</h3>
         <p class="popup__text">Оставляйте номер, мы вам перезвоним!</p>
         <form action="#" class="popup__form">
-            <input type="tel" name="tel" class="popup__tel" placeholder="Ваш телефон" required>
+            <input type="tel" name="tel" class="popup__tel" pattern="\+7\s[\(][0-9]{3}[\)]{0,1}\s\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="Ваш телефон" required>
             <input type="submit" class="popup__submit submit-button" value="ПЕРЕЗВОНИТЕ МНЕ">
         </form>
         <!-- position: absolute -->
