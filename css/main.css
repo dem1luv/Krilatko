@@ -1807,8 +1807,11 @@ body.lock {
 }
 
 /* fancybox popups */
-.fancybox-is-open .fancybox-bg {
+.fancybox-bg {
   background: #0a2531;
+}
+
+.fancybox-is-open .fancybox-bg {
   opacity: .8;
 }
 
