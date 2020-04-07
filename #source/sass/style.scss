@@ -4,11 +4,7 @@
 @import "fonts";
 
 /* common styles */
-body {
-    overflow-x: hidden;
-    &.lock {
-        overflow-y: hidden;
-    }
+.wrapper {
     font-family: "Museo Sans";
     font-weight: 700;
 }
@@ -1221,6 +1217,8 @@ body {
     border-radius: 20px;
     position: relative;
     overflow: visible;
+    font-family: "Museo Sans";
+    font-weight: 700;
 	&__title {
         margin: 0 0 14px 0;
         font-size: 20px;
