@@ -82,7 +82,7 @@
 }
 
 .home {
-    background: url("../images/home/bg.webp") 50% 50%/cover no-repeat, #ebf2f7;
+    background: url("images/home/bg.webp") 50% 50%/cover no-repeat, #ebf2f7;
     padding: 80px 0 61px 0;
     &__title {
         color: #535353;
@@ -267,7 +267,7 @@
             top: -88px;
             width: 199px;
             height: 53px;
-            background: url("../images/why/arrow.png") no-repeat 50% 50%;
+            background: url("images/why/arrow.png") no-repeat 50% 50%;
             @media(max-width: 767px) {
                 display: none;
             }
@@ -303,14 +303,14 @@
             height: 26px;
             bottom: -25px;
             left: calc(50% - 91.5px);
-            background: url("../images/why/shadow.png") 50% 50% no-repeat;
+            background: url("images/why/shadow.png") 50% 50% no-repeat;
         }
     }
 }
 
 .sale {
     padding: 70px 0 49px 0;
-    background: url("../images/sale/bg.webp") 50% 50%/cover no-repeat, #ecf3f8;
+    background: url("images/sale/bg.webp") 50% 50%/cover no-repeat, #ecf3f8;
     .container {
         display: flex;
         justify-content: flex-end;
@@ -347,7 +347,7 @@
             display: block;
             width: 155px;
             height: 64px;
-            background: url("../images/sale/arrow.png") 50% 50% no-repeat;
+            background: url("images/sale/arrow.png") 50% 50% no-repeat;
             position: absolute;
             left: 102px;
             bottom: -77px;
@@ -414,7 +414,7 @@
             display: block;
             width: 22px;
             height: 20px;
-            background: url("../images/sale/gift.png") 50% 50% no-repeat;
+            background: url("images/sale/gift.png") 50% 50% no-repeat;
             position: absolute;
             left: -33px;
             top: 4px;
@@ -449,7 +449,7 @@
     &__calendar {
         flex: 0 0 48px;
         height: 43px;
-        background: url("../images/sale/calendar.png") 50% 50% no-repeat;
+        background: url("images/sale/calendar.png") 50% 50% no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -499,7 +499,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: url("../images/statistics/01.png") 50% 50% no-repeat;
+        background: url("images/statistics/01.png") 50% 50% no-repeat;
         font-size: 48px;
         font-weight: 700;
         color: #68b0c9;
@@ -635,7 +635,7 @@
             &:after {
                 width: 122px;
                 height: 109px;
-                background: url("../images/struct/01.png") no-repeat;
+                background: url("images/struct/01.png") no-repeat;
                 top: 5px;
                 right: -134px;
             }
@@ -645,7 +645,7 @@
             &:after {
                 width: 144px;
                 height: 54px;
-                background: url("../images/struct/02.png") no-repeat;
+                background: url("images/struct/02.png") no-repeat;
                 top: -33px;
                 right: -127px;
             }
@@ -654,7 +654,7 @@
             &:after {
                 width: 150px;
                 height: 78px;
-                background: url("../images/struct/03.png") no-repeat;
+                background: url("images/struct/03.png") no-repeat;
                 top: -39px;
                 left: -145px;
             }
@@ -663,7 +663,7 @@
             &:after {
                 width: 143px;
                 height: 53px;
-                background: url("../images/struct/04.png") no-repeat;
+                background: url("images/struct/04.png") no-repeat;
                 top: 6px;
                 left: -150px;
             }
@@ -692,7 +692,7 @@
 
 .delivery {
     padding: 59px 0 70px 0;
-    background: url("../images/delivery/bg.webp") 50% 50%/cover no-repeat;
+    background: url("images/delivery/bg.webp") 50% 50%/cover no-repeat;
     .container {
         max-width: 770px;
         display: flex;
@@ -777,7 +777,7 @@
             position: absolute;
             width: 65px;
             height: 105px;
-            background: url("../images/delivery/arrow.png") no-repeat;
+            background: url("images/delivery/arrow.png") no-repeat;
             top: 8px;
             right: -99px;
             @media(max-width: 944px) {
@@ -939,7 +939,7 @@
         }
         &-1 {
             &:after {
-                background: url("../images/compare/01.png") no-repeat;
+                background: url("images/compare/01.png") no-repeat;
                 width: 81px;
                 height: 41px;
                 top: 5px;
@@ -948,7 +948,7 @@
         }
         &-2 {
             &:after {
-                background: url("../images/compare/02.png") no-repeat;
+                background: url("images/compare/02.png") no-repeat;
                 width: 87px;
                 height: 29px;
                 top: 3px;
@@ -957,7 +957,7 @@
         }
         &-3 {
             &:after {
-                background: url("../images/compare/03.png") no-repeat;
+                background: url("images/compare/03.png") no-repeat;
                 width: 87px;
                 height: 23px;
                 top: -14px;
@@ -966,7 +966,7 @@
         }
         &-4 {
             &:after {
-                background: url("../images/compare/04.png") no-repeat;
+                background: url("images/compare/04.png") no-repeat;
                 width: 85px;
                 height: 34px;
                 top: -28px;
@@ -975,7 +975,7 @@
         }
         &-5 {
             &:after {
-                background: url("../images/compare/05.png") no-repeat;
+                background: url("images/compare/05.png") no-repeat;
                 width: 82px;
                 height: 42px;
                 top: 4px;
@@ -984,7 +984,7 @@
         }
         &-6 {
             &:after {
-                background: url("../images/compare/06.png") no-repeat;
+                background: url("images/compare/06.png") no-repeat;
                 width: 86px;
                 height: 30px;
                 top: 2px;
@@ -993,7 +993,7 @@
         }
         &-7 {
             &:after {
-                background: url("../images/compare/07.png") no-repeat;
+                background: url("images/compare/07.png") no-repeat;
                 width: 88px;
                 height: 22px;
                 top: -14px;
@@ -1002,7 +1002,7 @@
         }
         &-8 {
             &:after {
-                background: url("../images/compare/08.png") no-repeat;
+                background: url("images/compare/08.png") no-repeat;
                 width: 84px;
                 height: 34px;
                 top: -31px;
@@ -1259,7 +1259,7 @@
         position: absolute;
         width: 24px;
         height: 24px;
-        background: url("../images/!popup/close.png") no-repeat;
+        background: url("images/!popup/close.png") no-repeat;
         top: -44px;
         right: 0;
         transition: opacity .25s ease;
