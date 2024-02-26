@@ -1,2 +1,2 @@
 # Krilatko
-https://lyashket.github.io/Krilatko/
+https://dem1luv.github.io/Krilatko/
